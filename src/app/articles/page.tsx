@@ -1,6 +1,6 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Mail, Calendar, ChevronLeft, ChevronRight } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { Mail, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function ArticlesPage() {
   return (
@@ -8,7 +8,7 @@ export default function ArticlesPage() {
       {/* Header */}
       <header className="bg-white">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="font-bold text-sm">PROJECT CENDEKIA</div>
+          <div className="font-bold text-sm">ADDIN CENDEKIA</div>
           <nav className="flex gap-6 text-xs uppercase">
             <Link href="/" className="hover:underline">
               About
@@ -27,7 +27,9 @@ export default function ArticlesPage() {
       <section className="bg-gradient-to-tr from-blue-900 via-emerald-700 to-emerald-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-3xl font-bold mb-4">ARTICLES</h1>
-          <p className="text-sm max-w-xl mx-auto">Discover my topics related to software development</p>
+          <p className="text-sm max-w-xl mx-auto">
+            Discover my topics related to software development
+          </p>
         </div>
       </section>
 
@@ -43,7 +45,10 @@ export default function ArticlesPage() {
                   <label htmlFor="sort" className="text-sm mr-2">
                     Sort by:
                   </label>
-                  <select id="sort" className="text-sm border border-gray-200 rounded-md px-3 py-2 bg-white">
+                  <select
+                    id="sort"
+                    className="text-sm border border-gray-200 rounded-md px-3 py-2 bg-white"
+                  >
                     <option value="newest">Newest First</option>
                     <option value="oldest">Oldest First</option>
                   </select>
@@ -53,7 +58,10 @@ export default function ArticlesPage() {
                   <label htmlFor="perPage" className="text-sm mr-2">
                     Show:
                   </label>
-                  <select id="perPage" className="text-sm border border-gray-200 rounded-md px-3 py-2 bg-white">
+                  <select
+                    id="perPage"
+                    className="text-sm border border-gray-200 rounded-md px-3 py-2 bg-white"
+                  >
                     <option value="9">9 per page</option>
                     <option value="12">12 per page</option>
                     <option value="18">18 per page</option>
@@ -63,7 +71,8 @@ export default function ArticlesPage() {
               </div>
 
               <div className="text-sm text-gray-500">
-                Showing <span className="font-medium">6</span> of <span className="font-medium">24</span> articles
+                Showing <span className="font-medium">6</span> of{" "}
+                <span className="font-medium">24</span> articles
               </div>
             </div>
 
@@ -82,16 +91,21 @@ export default function ArticlesPage() {
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded-full">Frontend</span>
+                    <span className="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded-full">
+                      Frontend
+                    </span>
                     <div className="flex items-center text-gray-500 text-xs">
                       <Calendar className="w-3 h-3 mr-1" />
                       <span>May 10, 2025</span>
                     </div>
                   </div>
-                  <h3 className="text-lg font-medium mb-2">Modern React Patterns for 2025</h3>
+                  <h3 className="text-lg font-medium mb-2">
+                    Modern React Patterns for 2025
+                  </h3>
                   <p className="text-sm text-gray-600 line-clamp-3">
-                    Some quick example text to build on the card title and make up the bulk of the card's content. This
-                    content will be truncated after three lines.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content. This content will be
+                    truncated after three lines.
                   </p>
                   <Link
                     href="/articles/modern-react-patterns"
@@ -115,16 +129,21 @@ export default function ArticlesPage() {
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">Design</span>
+                    <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
+                      Design
+                    </span>
                     <div className="flex items-center text-gray-500 text-xs">
                       <Calendar className="w-3 h-3 mr-1" />
                       <span>April 28, 2025</span>
                     </div>
                   </div>
-                  <h3 className="text-lg font-medium mb-2">UI/UX Trends to Watch in 2025</h3>
+                  <h3 className="text-lg font-medium mb-2">
+                    UI/UX Trends to Watch in 2025
+                  </h3>
                   <p className="text-sm text-gray-600 line-clamp-3">
-                    Some quick example text to build on the card title and make up the bulk of the card's content. This
-                    content will be truncated after three lines.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content. This content will be
+                    truncated after three lines.
                   </p>
                   <Link
                     href="/articles/ui-ux-trends"
@@ -148,16 +167,21 @@ export default function ArticlesPage() {
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">Performance</span>
+                    <span className="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">
+                      Performance
+                    </span>
                     <div className="flex items-center text-gray-500 text-xs">
                       <Calendar className="w-3 h-3 mr-1" />
                       <span>April 15, 2025</span>
                     </div>
                   </div>
-                  <h3 className="text-lg font-medium mb-2">Optimizing Web Performance</h3>
+                  <h3 className="text-lg font-medium mb-2">
+                    Optimizing Web Performance
+                  </h3>
                   <p className="text-sm text-gray-600 line-clamp-3">
-                    Some quick example text to build on the card title and make up the bulk of the card's content. This
-                    content will be truncated after three lines.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content. This content will be
+                    truncated after three lines.
                   </p>
                   <Link
                     href="/articles/optimizing-web-performance"
@@ -181,16 +205,21 @@ export default function ArticlesPage() {
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">JavaScript</span>
+                    <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">
+                      JavaScript
+                    </span>
                     <div className="flex items-center text-gray-500 text-xs">
                       <Calendar className="w-3 h-3 mr-1" />
                       <span>March 22, 2025</span>
                     </div>
                   </div>
-                  <h3 className="text-lg font-medium mb-2">Advanced JavaScript Techniques</h3>
+                  <h3 className="text-lg font-medium mb-2">
+                    Advanced JavaScript Techniques
+                  </h3>
                   <p className="text-sm text-gray-600 line-clamp-3">
-                    Some quick example text to build on the card title and make up the bulk of the card's content. This
-                    content will be truncated after three lines.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content. This content will be
+                    truncated after three lines.
                   </p>
                   <Link
                     href="/articles/advanced-javascript"
@@ -214,16 +243,21 @@ export default function ArticlesPage() {
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">DevOps</span>
+                    <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">
+                      DevOps
+                    </span>
                     <div className="flex items-center text-gray-500 text-xs">
                       <Calendar className="w-3 h-3 mr-1" />
                       <span>March 10, 2025</span>
                     </div>
                   </div>
-                  <h3 className="text-lg font-medium mb-2">CI/CD Pipeline Best Practices</h3>
+                  <h3 className="text-lg font-medium mb-2">
+                    CI/CD Pipeline Best Practices
+                  </h3>
                   <p className="text-sm text-gray-600 line-clamp-3">
-                    Some quick example text to build on the card title and make up the bulk of the card's content. This
-                    content will be truncated after three lines.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content. This content will be
+                    truncated after three lines.
                   </p>
                   <Link
                     href="/articles/cicd-pipeline"
@@ -247,16 +281,21 @@ export default function ArticlesPage() {
                 </div>
                 <div className="p-4">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">Career</span>
+                    <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
+                      Career
+                    </span>
                     <div className="flex items-center text-gray-500 text-xs">
                       <Calendar className="w-3 h-3 mr-1" />
                       <span>February 28, 2025</span>
                     </div>
                   </div>
-                  <h3 className="text-lg font-medium mb-2">Growing as a Developer in 2025</h3>
+                  <h3 className="text-lg font-medium mb-2">
+                    Growing as a Developer in 2025
+                  </h3>
                   <p className="text-sm text-gray-600 line-clamp-3">
-                    Some quick example text to build on the card title and make up the bulk of the card's content. This
-                    content will be truncated after three lines.
+                    Some quick example text to build on the card title and make
+                    up the bulk of the card's content. This content will be
+                    truncated after three lines.
                   </p>
                   <Link
                     href="/articles/growing-as-developer"
@@ -284,7 +323,9 @@ export default function ArticlesPage() {
                 <button className="w-10 h-10 flex items-center justify-center rounded-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50">
                   3
                 </button>
-                <span className="w-10 h-10 flex items-center justify-center text-gray-500">...</span>
+                <span className="w-10 h-10 flex items-center justify-center text-gray-500">
+                  ...
+                </span>
                 <button className="w-10 h-10 flex items-center justify-center rounded-md border border-gray-300 bg-white text-gray-700 hover:bg-gray-50">
                   10
                 </button>
@@ -303,7 +344,10 @@ export default function ArticlesPage() {
 
               {/* Search */}
               <div className="mb-6">
-                <label htmlFor="search" className="block text-sm font-medium mb-2">
+                <label
+                  htmlFor="search"
+                  className="block text-sm font-medium mb-2"
+                >
                   Search
                 </label>
                 <div className="relative">
@@ -334,7 +378,9 @@ export default function ArticlesPage() {
 
               {/* Categories */}
               <div className="mb-6">
-                <label className="block text-sm font-medium mb-2">Categories</label>
+                <label className="block text-sm font-medium mb-2">
+                  Categories
+                </label>
                 <div className="flex flex-wrap gap-2">
                   <button className="bg-emerald-100 text-emerald-800 hover:bg-emerald-200 text-xs px-3 py-1.5 rounded-full flex items-center">
                     <span>Frontend</span>
@@ -378,15 +424,27 @@ export default function ArticlesPage() {
 
               {/* Date Range */}
               <div className="mb-6">
-                <label className="block text-sm font-medium mb-2">Date Range</label>
+                <label className="block text-sm font-medium mb-2">
+                  Date Range
+                </label>
                 <div className="grid grid-cols-2 gap-2">
                   <div>
-                    <label className="block text-xs text-gray-500 mb-1">From</label>
-                    <input type="date" className="w-full border border-gray-200 rounded-md px-3 py-1.5 text-sm" />
+                    <label className="block text-xs text-gray-500 mb-1">
+                      From
+                    </label>
+                    <input
+                      type="date"
+                      className="w-full border border-gray-200 rounded-md px-3 py-1.5 text-sm"
+                    />
                   </div>
                   <div>
-                    <label className="block text-xs text-gray-500 mb-1">To</label>
-                    <input type="date" className="w-full border border-gray-200 rounded-md px-3 py-1.5 text-sm" />
+                    <label className="block text-xs text-gray-500 mb-1">
+                      To
+                    </label>
+                    <input
+                      type="date"
+                      className="w-full border border-gray-200 rounded-md px-3 py-1.5 text-sm"
+                    />
                   </div>
                 </div>
               </div>
@@ -410,8 +468,9 @@ export default function ArticlesPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-xl font-semibold mb-2">Contact Me</h2>
           <p className="text-sm mb-8 max-w-xl mx-auto">
-            Have an interesting project for me? I'm always open to discussing new opportunities and collaborations. Get
-            in touch and let's create something amazing together.
+            Have an interesting project for me? I'm always open to discussing
+            new opportunities and collaborations. Get in touch and let's create
+            something amazing together.
           </p>
 
           <a
@@ -429,7 +488,7 @@ export default function ArticlesPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold text-sm mb-4">PROJECT CENDEKIA</h3>
+              <h3 className="font-bold text-sm mb-4">ADDIN CENDEKIA</h3>
             </div>
 
             <div>
@@ -465,15 +524,24 @@ export default function ArticlesPage() {
             <div>
               <h3 className="font-bold text-sm mb-4">Social Media</h3>
               <div className="flex gap-2">
-                <Link href="#" className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
+                <Link
+                  href="#"
+                  className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center"
+                >
                   <span className="sr-only">LinkedIn</span>
                   <span className="text-xs">in</span>
                 </Link>
-                <Link href="#" className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
+                <Link
+                  href="#"
+                  className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center"
+                >
                   <span className="sr-only">GitHub</span>
                   <span className="text-xs">G</span>
                 </Link>
-                <Link href="#" className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
+                <Link
+                  href="#"
+                  className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center"
+                >
                   <span className="sr-only">Instagram</span>
                   <span className="text-xs">I</span>
                 </Link>
@@ -481,9 +549,11 @@ export default function ArticlesPage() {
             </div>
           </div>
 
-          <div className="text-center text-xs text-gray-500 mt-12">©Copyright: Addin cendekia wahid</div>
+          <div className="text-center text-xs text-gray-500 mt-12">
+            ©Copyright: Addin cendekia wahid
+          </div>
         </div>
       </footer>
     </main>
-  )
+  );
 }

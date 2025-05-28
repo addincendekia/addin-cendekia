@@ -1,6 +1,6 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Mail, Calendar, ChevronLeft, ChevronRight } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { Mail, Calendar, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function ProjectsPage() {
   return (
@@ -8,7 +8,7 @@ export default function ProjectsPage() {
       {/* Header */}
       <header className="bg-white">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="font-bold text-sm">PROJECT CENDEKIA</div>
+          <div className="font-bold text-sm">ADDIN CENDEKIA</div>
           <nav className="flex gap-6 text-xs uppercase">
             <Link href="/" className="hover:underline">
               About
@@ -26,10 +26,10 @@ export default function ProjectsPage() {
       {/* Hero Section */}
       <section className="bg-gradient-to-tr from-blue-900 via-emerald-700 to-emerald-600 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-3xl font-bold mb-4">FEATURED WORK</h1>
+          <h1 className="text-3xl font-bold mb-4">FEATURED PROJECT</h1>
           <p className="text-sm max-w-xl mx-auto">
-            Explore my portfolio of projects showcasing various technologies, challenges faced, and solutions
-            implemented
+            Explore my portfolio of projects showcasing various technologies,
+            challenges faced, and solutions implemented
           </p>
         </div>
       </section>
@@ -43,7 +43,10 @@ export default function ProjectsPage() {
               <label htmlFor="sort" className="text-sm mr-2">
                 Sort by:
               </label>
-              <select id="sort" className="text-sm border border-gray-200 rounded-md px-3 py-2 bg-white">
+              <select
+                id="sort"
+                className="text-sm border border-gray-200 rounded-md px-3 py-2 bg-white"
+              >
                 <option value="newest">Newest First</option>
                 <option value="oldest">Oldest First</option>
                 <option value="name">Project Name</option>
@@ -55,7 +58,10 @@ export default function ProjectsPage() {
               <label htmlFor="projectType" className="text-sm mr-2">
                 Project Type:
               </label>
-              <select id="projectType" className="text-sm border border-gray-200 rounded-md px-3 py-2 bg-white">
+              <select
+                id="projectType"
+                className="text-sm border border-gray-200 rounded-md px-3 py-2 bg-white"
+              >
                 <option value="all">All Types</option>
                 <option value="commission">Commission</option>
                 <option value="personal">Personal</option>
@@ -72,8 +78,18 @@ export default function ProjectsPage() {
                   className="text-sm border border-gray-200 rounded-md px-3 py-2 bg-white flex items-center gap-2 min-w-[120px]"
                 >
                   <span>Select Categories</span>
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  <svg
+                    className="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </button>
                 {/* Dropdown would be implemented with state management */}
@@ -82,7 +98,8 @@ export default function ProjectsPage() {
           </div>
 
           <div className="text-sm text-gray-500">
-            Showing <span className="font-medium">9</span> of <span className="font-medium">24</span> projects
+            Showing <span className="font-medium">9</span> of{" "}
+            <span className="font-medium">24</span> projects
           </div>
         </div>
 
@@ -93,20 +110,42 @@ export default function ProjectsPage() {
             <span className="bg-emerald-100 text-emerald-800 text-xs px-3 py-1 rounded-full flex items-center gap-1">
               Web Development
               <button className="hover:bg-emerald-200 rounded-full p-0.5">
-                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-3 h-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               </button>
             </span>
             <span className="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full flex items-center gap-1">
               Commission
               <button className="hover:bg-blue-200 rounded-full p-0.5">
-                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                <svg
+                  className="w-3 h-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               </button>
             </span>
-            <button className="text-xs text-gray-500 hover:text-gray-700 underline">Clear all filters</button>
+            <button className="text-xs text-gray-500 hover:text-gray-700 underline">
+              Clear all filters
+            </button>
           </div>
         </div>
 
@@ -124,16 +163,22 @@ export default function ProjectsPage() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                <h3 className="text-white font-medium text-lg">E-commerce Platform</h3>
+                <h3 className="text-white font-medium text-lg">
+                  E-commerce Platform
+                </h3>
                 <p className="text-white/80 text-sm line-clamp-2 mb-2">
-                  A full-featured online store with product management, cart functionality, and secure checkout process.
+                  A full-featured online store with product management, cart
+                  functionality, and secure checkout process.
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-white/70 text-xs">
                     <Calendar className="w-3 h-3 mr-1" />
                     <span>March 15, 2025</span>
                   </div>
-                  <Link href="/projects/ecommerce-platform" className="text-emerald-400 text-xs hover:underline">
+                  <Link
+                    href="/projects/ecommerce-platform"
+                    className="text-emerald-400 text-xs hover:underline"
+                  >
                     View Details
                   </Link>
                 </div>
@@ -152,14 +197,18 @@ export default function ProjectsPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                 <h3 className="text-white font-medium text-lg">Mobile App</h3>
                 <p className="text-white/80 text-sm line-clamp-2 mb-2">
-                  A cross-platform mobile application for task management with offline capabilities and cloud sync.
+                  A cross-platform mobile application for task management with
+                  offline capabilities and cloud sync.
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-white/70 text-xs">
                     <Calendar className="w-3 h-3 mr-1" />
                     <span>February 12, 2025</span>
                   </div>
-                  <Link href="/projects/mobile-app" className="text-emerald-400 text-xs hover:underline">
+                  <Link
+                    href="/projects/mobile-app"
+                    className="text-emerald-400 text-xs hover:underline"
+                  >
                     View Details
                   </Link>
                 </div>
@@ -178,15 +227,18 @@ export default function ProjectsPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                 <h3 className="text-white font-medium text-lg">Weather App</h3>
                 <p className="text-white/80 text-sm line-clamp-2 mb-2">
-                  A weather forecasting application with location-based services, interactive maps, and severe weather
-                  alerts.
+                  A weather forecasting application with location-based
+                  services, interactive maps, and severe weather alerts.
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-white/70 text-xs">
                     <Calendar className="w-3 h-3 mr-1" />
                     <span>August 15, 2024</span>
                   </div>
-                  <Link href="/projects/weather-app" className="text-emerald-400 text-xs hover:underline">
+                  <Link
+                    href="/projects/weather-app"
+                    className="text-emerald-400 text-xs hover:underline"
+                  >
                     View Details
                   </Link>
                 </div>
@@ -208,14 +260,18 @@ export default function ProjectsPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
                 <h3 className="text-white font-medium text-lg">Dashboard UI</h3>
                 <p className="text-white/80 text-sm line-clamp-2 mb-2">
-                  An intuitive analytics dashboard with real-time data visualization and customizable widgets.
+                  An intuitive analytics dashboard with real-time data
+                  visualization and customizable widgets.
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-white/70 text-xs">
                     <Calendar className="w-3 h-3 mr-1" />
                     <span>January 28, 2025</span>
                   </div>
-                  <Link href="/projects/dashboard-ui" className="text-emerald-400 text-xs hover:underline">
+                  <Link
+                    href="/projects/dashboard-ui"
+                    className="text-emerald-400 text-xs hover:underline"
+                  >
                     View Details
                   </Link>
                 </div>
@@ -232,16 +288,22 @@ export default function ProjectsPage() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                <h3 className="text-white font-medium text-lg">Educational Platform</h3>
+                <h3 className="text-white font-medium text-lg">
+                  Educational Platform
+                </h3>
                 <p className="text-white/80 text-sm line-clamp-2 mb-2">
-                  An online learning platform with course management, interactive lessons, and progress tracking.
+                  An online learning platform with course management,
+                  interactive lessons, and progress tracking.
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-white/70 text-xs">
                     <Calendar className="w-3 h-3 mr-1" />
                     <span>October 18, 2024</span>
                   </div>
-                  <Link href="/projects/educational-platform" className="text-emerald-400 text-xs hover:underline">
+                  <Link
+                    href="/projects/educational-platform"
+                    className="text-emerald-400 text-xs hover:underline"
+                  >
                     View Details
                   </Link>
                 </div>
@@ -258,16 +320,22 @@ export default function ProjectsPage() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                <h3 className="text-white font-medium text-lg">Social Media App</h3>
+                <h3 className="text-white font-medium text-lg">
+                  Social Media App
+                </h3>
                 <p className="text-white/80 text-sm line-clamp-2 mb-2">
-                  A social networking platform with real-time messaging, content sharing, and user engagement features.
+                  A social networking platform with real-time messaging, content
+                  sharing, and user engagement features.
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-white/70 text-xs">
                     <Calendar className="w-3 h-3 mr-1" />
                     <span>December 10, 2024</span>
                   </div>
-                  <Link href="/projects/social-media-app" className="text-emerald-400 text-xs hover:underline">
+                  <Link
+                    href="/projects/social-media-app"
+                    className="text-emerald-400 text-xs hover:underline"
+                  >
                     View Details
                   </Link>
                 </div>
@@ -287,16 +355,22 @@ export default function ProjectsPage() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                <h3 className="text-white font-medium text-lg">Corporate Website</h3>
+                <h3 className="text-white font-medium text-lg">
+                  Corporate Website
+                </h3>
                 <p className="text-white/80 text-sm line-clamp-2 mb-2">
-                  A responsive corporate website with CMS integration, multilingual support, and optimized performance.
+                  A responsive corporate website with CMS integration,
+                  multilingual support, and optimized performance.
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-white/70 text-xs">
                     <Calendar className="w-3 h-3 mr-1" />
                     <span>April 5, 2025</span>
                   </div>
-                  <Link href="/projects/corporate-website" className="text-emerald-400 text-xs hover:underline">
+                  <Link
+                    href="/projects/corporate-website"
+                    className="text-emerald-400 text-xs hover:underline"
+                  >
                     View Details
                   </Link>
                 </div>
@@ -313,17 +387,22 @@ export default function ProjectsPage() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                <h3 className="text-white font-medium text-lg">Fitness Tracker</h3>
+                <h3 className="text-white font-medium text-lg">
+                  Fitness Tracker
+                </h3>
                 <p className="text-white/80 text-sm line-clamp-2 mb-2">
-                  A health and fitness application that tracks workouts, nutrition, and provides personalized
-                  recommendations.
+                  A health and fitness application that tracks workouts,
+                  nutrition, and provides personalized recommendations.
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-white/70 text-xs">
                     <Calendar className="w-3 h-3 mr-1" />
                     <span>November 5, 2024</span>
                   </div>
-                  <Link href="/projects/fitness-tracker" className="text-emerald-400 text-xs hover:underline">
+                  <Link
+                    href="/projects/fitness-tracker"
+                    className="text-emerald-400 text-xs hover:underline"
+                  >
                     View Details
                   </Link>
                 </div>
@@ -340,17 +419,22 @@ export default function ProjectsPage() {
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                <h3 className="text-white font-medium text-lg">Travel Booking App</h3>
+                <h3 className="text-white font-medium text-lg">
+                  Travel Booking App
+                </h3>
                 <p className="text-white/80 text-sm line-clamp-2 mb-2">
-                  A travel booking application with flight and hotel reservations, itinerary planning, and travel
-                  recommendations.
+                  A travel booking application with flight and hotel
+                  reservations, itinerary planning, and travel recommendations.
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center text-white/70 text-xs">
                     <Calendar className="w-3 h-3 mr-1" />
                     <span>September 22, 2024</span>
                   </div>
-                  <Link href="/projects/travel-booking-app" className="text-emerald-400 text-xs hover:underline">
+                  <Link
+                    href="/projects/travel-booking-app"
+                    className="text-emerald-400 text-xs hover:underline"
+                  >
                     View Details
                   </Link>
                 </div>
@@ -388,8 +472,9 @@ export default function ProjectsPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-xl font-semibold mb-2">Contact Me</h2>
           <p className="text-sm mb-8 max-w-xl mx-auto">
-            Have an interesting project for me? I'm always open to discussing new opportunities and collaborations. Get
-            in touch and let's create something amazing together.
+            Have an interesting project for me? I'm always open to discussing
+            new opportunities and collaborations. Get in touch and let's create
+            something amazing together.
           </p>
 
           <a
@@ -407,7 +492,7 @@ export default function ProjectsPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold text-sm mb-4">PROJECT CENDEKIA</h3>
+              <h3 className="font-bold text-sm mb-4">ADDIN CENDEKIA</h3>
             </div>
 
             <div>
@@ -443,15 +528,24 @@ export default function ProjectsPage() {
             <div>
               <h3 className="font-bold text-sm mb-4">Social Media</h3>
               <div className="flex gap-2">
-                <Link href="#" className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
+                <Link
+                  href="#"
+                  className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center"
+                >
                   <span className="sr-only">LinkedIn</span>
                   <span className="text-xs">in</span>
                 </Link>
-                <Link href="#" className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
+                <Link
+                  href="#"
+                  className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center"
+                >
                   <span className="sr-only">GitHub</span>
                   <span className="text-xs">G</span>
                 </Link>
-                <Link href="#" className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center">
+                <Link
+                  href="#"
+                  className="w-8 h-8 rounded-full bg-gray-200 flex items-center justify-center"
+                >
                   <span className="sr-only">Instagram</span>
                   <span className="text-xs">I</span>
                 </Link>
@@ -459,9 +553,11 @@ export default function ProjectsPage() {
             </div>
           </div>
 
-          <div className="text-center text-xs text-gray-500 mt-12">©Copyright: Addin cendekia wahid</div>
+          <div className="text-center text-xs text-gray-500 mt-12">
+            ©Copyright: Addin cendekia wahid
+          </div>
         </div>
       </footer>
     </main>
-  )
+  );
 }

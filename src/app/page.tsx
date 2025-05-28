@@ -33,8 +33,8 @@ export default function Home() {
                 welcome to my personal space on the web.
               </p>
 
-              <h2 className="text-lg font-bold uppercase mb-2">
-                SOFTWARE DEVELOPER
+              <h2 className="text-lg font-thin uppercase mb-2">
+                IM A <strong>SOFTWARE DEVELOPER</strong>
               </h2>
               <p className="text-sm mb-6">
                 With a strong focus on frontend technologies and user
@@ -43,7 +43,7 @@ export default function Home() {
               </p>
 
               <p className="mb-4 text-sm">
-                Have an interesting project for me?
+                Let me know if you have something to discuss with me
               </p>
               <button className="bg-yellow-400 text-black rounded-full px-4 py-2 text-sm flex items-center gap-2">
                 <Send className="w-4 h-4" />
@@ -55,20 +55,12 @@ export default function Home() {
             <div className="flex justify-center items-center">
               <div className="relative w-full max-w-md">
                 <Image
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/hero-illustration.png?height=400&width=400"
                   width={400}
                   height={400}
                   alt="Developer Illustration"
                   className="w-full h-auto"
                 />
-                {/* Note: Replace with an actual illustration */}
-                {/* Suggested illustrations:
-                  1. Developer character working on floating screens/interfaces
-                  2. Abstract code visualization with colorful elements
-                  3. 3D workspace with development tools and devices
-                  4. Tech stack icons arranged in a creative pattern
-                  5. Web/app interfaces in a perspective view
-                */}
               </div>
             </div>
           </div>
@@ -87,22 +79,23 @@ export default function Home() {
         <p className="text-center max-w-2xl mx-auto text-sm mb-12">
           Mostly working on e-commerce, but there are also various other
           applications such as company profile, news portal, school management
-          system, ERP, custom HRIS, landpage, portal and mobile app.
+          system, ERP, custom HRIS, and custom mobile app.
         </p>
 
         <div className="flex justify-center gap-16 mb-16">
+          {/* TODO: maybe its good to have statistic github */}
           <div className="text-center">
-            <div className="text-2xl font-bold text-emerald-600">6+</div>
+            <div className="text-2xl font-bold text-emerald-600">8+</div>
             <div className="text-sm">Year of</div>
             <div className="text-sm">Experience</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold text-emerald-600">45+</div>
+            <div className="text-2xl font-bold text-emerald-600">50+</div>
             <div className="text-sm">Projects Involve</div>
             <div className="text-sm">and Developed</div>
           </div>
           <div className="text-center">
-            <div className="text-2xl font-bold text-emerald-600">37</div>
+            <div className="text-2xl font-bold text-emerald-600">40+</div>
             <div className="text-sm">Professional</div>
             <div className="text-sm">Clients</div>
           </div>
@@ -113,17 +106,17 @@ export default function Home() {
           {/* These would be replaced with actual tech icons */}
           <div className="flex justify-center">
             <Image
-              src="/placeholder.svg?height=40&width=40"
-              width={40}
-              height={40}
+              src="/html.png?height=80&width=80"
+              width={80}
+              height={80}
               alt="HTML"
             />
           </div>
           <div className="flex justify-center">
             <Image
-              src="/placeholder.svg?height=40&width=40"
-              width={40}
-              height={40}
+              src="/css.png?height=80&width=80"
+              width={80}
+              height={80}
               alt="CSS"
             />
           </div>
@@ -137,26 +130,26 @@ export default function Home() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="/placeholder.svg?height=40&width=40"
-              width={40}
-              height={40}
+              src="/reactjs.png?height=80&width=80"
+              width={80}
+              height={80}
               alt="React"
             />
           </div>
           <div className="flex justify-center">
             <Image
-              src="/placeholder.svg?height=40&width=40"
-              width={40}
-              height={40}
-              alt="Vue"
+              src="/nextjs.png?height=80&width=80"
+              width={80}
+              height={80}
+              alt="Next JS"
             />
           </div>
           <div className="flex justify-center">
             <Image
-              src="/placeholder.svg?height=40&width=40"
-              width={40}
-              height={40}
-              alt="Angular"
+              src="/laravel.png?height=80&width=80"
+              width={80}
+              height={80}
+              alt="Laravel"
             />
           </div>
           <div className="flex justify-center">
@@ -196,7 +189,7 @@ export default function Home() {
 
       {/* Projects Section */}
       <section className="py-16 container mx-auto px-4" id="projects">
-        <h2 className="text-2xl font-semibold mb-6">Featured Work</h2>
+        <h2 className="text-2xl font-semibold mb-6">Featured Project</h2>
 
         <p className="text-sm mb-6 max-w-2xl">
           Each project showcases the technologies used, challenges faced, and
@@ -204,7 +197,10 @@ export default function Home() {
           through thoughtful technical decisions
         </p>
 
-        <Link href="#" className="text-emerald-600 text-sm mb-8 inline-block">
+        <Link
+          href="/projects"
+          className="text-emerald-600 text-sm mb-8 inline-block"
+        >
           See Another Projects
         </Link>
 
@@ -231,28 +227,6 @@ export default function Home() {
                 <div className="flex items-center text-white/70 text-xs">
                   <Calendar className="w-3 h-3 mr-1" />
                   <span>March 15, 2025</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Short Image */}
-            <div className="relative group overflow-hidden rounded-lg shadow-sm h-[250px]">
-              <Image
-                src="/placeholder.svg?height=500&width=600"
-                width={600}
-                height={500}
-                alt="Dashboard UI"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                <h3 className="text-white font-medium text-lg">Dashboard UI</h3>
-                <p className="text-white/80 text-sm line-clamp-2 mb-2">
-                  An intuitive analytics dashboard with real-time data
-                  visualization and customizable widgets.
-                </p>
-                <div className="flex items-center text-white/70 text-xs">
-                  <Calendar className="w-3 h-3 mr-1" />
-                  <span>January 28, 2025</span>
                 </div>
               </div>
             </div>
@@ -329,30 +303,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-
-            {/* Short Image */}
-            <div className="relative group overflow-hidden rounded-lg shadow-sm h-[250px]">
-              <Image
-                src="/placeholder.svg?height=500&width=600"
-                width={600}
-                height={500}
-                alt="Fitness Tracker"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-4">
-                <h3 className="text-white font-medium text-lg">
-                  Fitness Tracker
-                </h3>
-                <p className="text-white/80 text-sm line-clamp-2 mb-2">
-                  A health and fitness application that tracks workouts,
-                  nutrition, and provides personalized recommendations.
-                </p>
-                <div className="flex items-center text-white/70 text-xs">
-                  <Calendar className="w-3 h-3 mr-1" />
-                  <span>November 5, 2024</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -368,7 +318,15 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mt-8">
             {/* Article Card 1 */}
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div className="h-48 bg-gray-500"></div>
+              <div className="h-48 bg-gray-500">
+                <Image
+                  src="/placeholder.svg?height=300&width=400"
+                  width={400}
+                  height={300}
+                  alt="Article thumbnail"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                   <span className="bg-emerald-100 text-emerald-800 text-xs px-2 py-1 rounded-full">
@@ -383,17 +341,30 @@ export default function Home() {
                   Modern React Patterns for 2025
                 </h3>
                 <p className="text-sm text-gray-600 line-clamp-3">
-                  Exploring the latest React patterns and best practices for
-                  building scalable and maintainable applications. We&apos;ll
-                  dive into hooks, context, and the new React server components
-                  that are changing how we build web applications.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. This content will be truncated
+                  after three lines.
                 </p>
+                <Link
+                  href="/articles/modern-react-patterns"
+                  className="text-emerald-600 text-sm mt-3 inline-block hover:underline"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
 
             {/* Article Card 2 */}
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div className="h-48 bg-gray-500"></div>
+              <div className="h-48 bg-gray-500">
+                <Image
+                  src="/placeholder.svg?height=300&width=400"
+                  width={400}
+                  height={300}
+                  alt="Article thumbnail"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                   <span className="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-full">
@@ -408,17 +379,30 @@ export default function Home() {
                   UI/UX Trends to Watch in 2025
                 </h3>
                 <p className="text-sm text-gray-600 line-clamp-3">
-                  A comprehensive look at the emerging UI/UX design trends that
-                  are shaping the digital landscape this year. From neumorphism
-                  to glassmorphism, we explore how these trends are evolving and
-                  how you can incorporate them into your projects.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. This content will be truncated
+                  after three lines.
                 </p>
+                <Link
+                  href="/articles/ui-ux-trends"
+                  className="text-emerald-600 text-sm mt-3 inline-block hover:underline"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
 
             {/* Article Card 3 */}
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div className="h-48 bg-gray-500"></div>
+              <div className="h-48 bg-gray-500">
+                <Image
+                  src="/placeholder.svg?height=300&width=400"
+                  width={400}
+                  height={300}
+                  alt="Article thumbnail"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                   <span className="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full">
@@ -433,17 +417,30 @@ export default function Home() {
                   Optimizing Web Performance
                 </h3>
                 <p className="text-sm text-gray-600 line-clamp-3">
-                  Learn how to optimize your web applications for maximum
-                  performance. This article covers techniques for reducing
-                  bundle size, improving load times, and creating smooth user
-                  experiences even on low-powered devices.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. This content will be truncated
+                  after three lines.
                 </p>
+                <Link
+                  href="/articles/optimizing-web-performance"
+                  className="text-emerald-600 text-sm mt-3 inline-block hover:underline"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
 
             {/* Article Card 4 */}
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div className="h-48 bg-gray-500"></div>
+              <div className="h-48 bg-gray-500">
+                <Image
+                  src="/placeholder.svg?height=300&width=400"
+                  width={400}
+                  height={300}
+                  alt="Article thumbnail"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                   <span className="bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded-full">
@@ -458,18 +455,30 @@ export default function Home() {
                   Advanced JavaScript Techniques
                 </h3>
                 <p className="text-sm text-gray-600 line-clamp-3">
-                  Dive deep into advanced JavaScript concepts that will take
-                  your coding skills to the next level. We&apos;ll explore
-                  closures, prototypes, async patterns, and functional
-                  programming techniques that can make your code more elegant
-                  and efficient.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. This content will be truncated
+                  after three lines.
                 </p>
+                <Link
+                  href="/articles/advanced-javascript"
+                  className="text-emerald-600 text-sm mt-3 inline-block hover:underline"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
 
             {/* Article Card 5 */}
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div className="h-48 bg-gray-500"></div>
+              <div className="h-48 bg-gray-500">
+                <Image
+                  src="/placeholder.svg?height=300&width=400"
+                  width={400}
+                  height={300}
+                  alt="Article thumbnail"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                   <span className="bg-red-100 text-red-800 text-xs px-2 py-1 rounded-full">
@@ -484,17 +493,30 @@ export default function Home() {
                   CI/CD Pipeline Best Practices
                 </h3>
                 <p className="text-sm text-gray-600 line-clamp-3">
-                  A guide to setting up efficient CI/CD pipelines for your
-                  projects. Learn how to automate testing, deployment, and
-                  monitoring to ensure your applications are always running
-                  smoothly and your team can ship features faster.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. This content will be truncated
+                  after three lines.
                 </p>
+                <Link
+                  href="/articles/cicd-pipeline"
+                  className="text-emerald-600 text-sm mt-3 inline-block hover:underline"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
 
             {/* Article Card 6 */}
             <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow">
-              <div className="h-48 bg-gray-500"></div>
+              <div className="h-48 bg-gray-500">
+                <Image
+                  src="/placeholder.svg?height=300&width=400"
+                  width={400}
+                  height={300}
+                  alt="Article thumbnail"
+                  className="w-full h-full object-cover"
+                />
+              </div>
               <div className="p-4">
                 <div className="flex justify-between items-center mb-2">
                   <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full">
@@ -509,18 +531,25 @@ export default function Home() {
                   Growing as a Developer in 2025
                 </h3>
                 <p className="text-sm text-gray-600 line-clamp-3">
-                  Tips and strategies for advancing your career as a developer
-                  in today&apos;s competitive landscape. From building a
-                  personal brand to mastering in-demand skills, this article
-                  provides actionable advice for developers at all stages of
-                  their careers.
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content. This content will be truncated
+                  after three lines.
                 </p>
+                <Link
+                  href="/articles/growing-as-developer"
+                  className="text-emerald-600 text-sm mt-3 inline-block hover:underline"
+                >
+                  Read More
+                </Link>
               </div>
             </div>
           </div>
 
           <div className="text-center mt-8">
-            <Link href="#" className="text-emerald-600 text-sm hover:underline">
+            <Link
+              href="/articles"
+              className="text-emerald-600 text-sm hover:underline"
+            >
               See All Articles
             </Link>
           </div>
@@ -552,7 +581,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold text-sm mb-4">PROJECT CENDEKIA</h3>
+              <h3 className="font-bold text-sm mb-4">ADDIN CENDEKIA</h3>
             </div>
 
             <div>
@@ -580,8 +609,7 @@ export default function Home() {
               <h3 className="font-bold text-sm mb-4">Reach Me</h3>
               <ul className="text-sm space-y-2">
                 <li>Sidoarjo, East Java, Indonesia</li>
-                <li>+6222345764</li>
-                <li>project.cendekia.v@gmail.com</li>
+                <li>project.cendekia.id@gmail.com</li>
               </ul>
             </div>
 

@@ -7,7 +7,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Project Cendekia - Addin Cendekia Wahid",
+  title: "Addin Cendekia - Addin Cendekia Wahid",
   description: "Frontend Developer Portfolio",
 };
 

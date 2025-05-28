@@ -22,7 +22,7 @@ export default function ProjectDetailPage() {
       {/* Header */}
       <header className="bg-white border-b border-gray-100">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="font-bold text-sm">PROJECT CENDEKIA</div>
+          <div className="font-bold text-sm">ADDIN CENDEKIA</div>
           <nav className="flex gap-6 text-xs uppercase">
             <Link href="/" className="hover:underline">
               About
@@ -1228,7 +1228,7 @@ export default function ProjectDetailPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="font-bold text-sm mb-4">PROJECT CENDEKIA</h3>
+              <h3 className="font-bold text-sm mb-4">ADDIN CENDEKIA</h3>
             </div>
 
             <div>
