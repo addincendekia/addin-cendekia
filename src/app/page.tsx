@@ -42,10 +42,10 @@ export default function Home() {
                 shares my thoughts through blog articles.
               </p>
 
-              <p className="mb-4 text-sm">
+              <p className="mb-6">
                 Let me know if you have something to discuss with me
               </p>
-              <button className="bg-yellow-400 text-black rounded-full px-4 py-2 text-sm flex items-center gap-2">
+              <button className="cursor-pointer bg-yellow-400 text-black rounded-full px-8 py-3 text-sm inline-flex items-center gap-2 mx-auto hover:bg-yellow-500 transition-colors">
                 <Send className="w-4 h-4" />
                 Send me message
               </button>
@@ -102,86 +102,96 @@ export default function Home() {
         </div>
 
         {/* Technology Icons */}
-        <div className="grid grid-cols-6 md:grid-cols-10 gap-4 mb-16">
+        <div className="flex justify-center overflow-x-auto gap-8 py-4 mb-16 scrollbar-hide">
           {/* These would be replaced with actual tech icons */}
-          <div className="flex justify-center">
+          <div className="flex-shrink-0">
             <Image
-              src="/html.png?height=80&width=80"
-              width={80}
-              height={80}
+              src="/html.png?height=100&width=100"
+              width={100}
+              height={100}
               alt="HTML"
+              className="h-20 w-auto"
             />
           </div>
-          <div className="flex justify-center">
+          <div className="flex-shrink-0">
             <Image
-              src="/css.png?height=80&width=80"
-              width={80}
-              height={80}
+              src="/css.png?height=100&width=100"
+              width={100}
+              height={100}
               alt="CSS"
+              className="h-20 w-auto"
             />
           </div>
-          <div className="flex justify-center">
+          <div className="flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=40&width=40"
-              width={40}
-              height={40}
-              alt="JavaScript"
+              src="/tailwindcss.png?height=100&width=100"
+              width={100}
+              height={100}
+              alt="Tailwindcss"
+              className="h-20 w-auto"
             />
           </div>
-          <div className="flex justify-center">
+          <div className="flex-shrink-0">
             <Image
-              src="/reactjs.png?height=80&width=80"
-              width={80}
-              height={80}
+              src="/nodejs.png?height=100&width=100"
+              width={100}
+              height={100}
+              alt="Node JS"
+              className="h-20 w-auto"
+            />
+          </div>
+          <div className="flex-shrink-0">
+            <Image
+              src="/typescript.png?height=100&width=100"
+              width={100}
+              height={100}
+              alt="Typescript"
+              className="h-20 w-auto"
+            />
+          </div>
+          <div className="flex-shrink-0">
+            <Image
+              src="/reactjs.png?height=100&width=100"
+              width={100}
+              height={100}
               alt="React"
+              className="h-20 w-auto"
             />
           </div>
-          <div className="flex justify-center">
+          <div className="flex-shrink-0">
             <Image
-              src="/nextjs.png?height=80&width=80"
-              width={80}
-              height={80}
+              src="/nextjs.png?height=100&width=100"
+              width={100}
+              height={100}
               alt="Next JS"
+              className="h-20 w-auto"
             />
           </div>
-          <div className="flex justify-center">
+          <div className="flex-shrink-0">
             <Image
-              src="/laravel.png?height=80&width=80"
-              width={80}
-              height={80}
+              src="/laravel.png?height=100&width=100"
+              width={100}
+              height={100}
               alt="Laravel"
+              className="h-20 w-auto"
             />
           </div>
-          <div className="flex justify-center">
+          <div className="flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=40&width=40"
-              width={40}
-              height={40}
-              alt="Node.js"
+              src="/graphql.png?height=100&width=100"
+              width={100}
+              height={100}
+              alt="Graphql"
+              className="h-20 w-auto"
             />
           </div>
-          <div className="flex justify-center">
+          <div className="flex-shrink-0">
             <Image
-              src="/placeholder.svg?height=40&width=40"
-              width={40}
-              height={40}
-              alt="TypeScript"
-            />
-          </div>
-          <div className="flex justify-center">
-            <Image
-              src="/placeholder.svg?height=40&width=40"
-              width={40}
-              height={40}
-              alt="PHP"
-            />
-          </div>
-          <div className="flex justify-center">
-            <Image
-              src="/placeholder.svg?height=40&width=40"
-              width={40}
-              height={40}
-              alt="Magento"
+              src="/flutter.png?height=100&width=100"
+              width={100}
+              height={100}
+              alt="Flutter"
+              className="h-20 w-auto"
             />
           </div>
         </div>
